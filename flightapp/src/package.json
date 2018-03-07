@@ -1,0 +1,13 @@
+{
+  "name": "flightapp",
+  "version": "1.0.0",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "cleave.js": "^1.1.2",
+    "flatpickr": "^4.3.2",
+    "fullpage.js": "^2.9.6",
+    "jquery": "^3.3.1"
+  }
+}
