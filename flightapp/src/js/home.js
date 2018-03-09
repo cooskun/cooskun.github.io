@@ -12,8 +12,7 @@ $(document).ready(function() {
       method: "GET",
       url: "result.html",
       success: function(data) {
-        console.log(data);
-        $("body").append(data);
+        $("#search-results").append(data);
       }
     });
   });
