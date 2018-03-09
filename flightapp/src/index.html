@@ -99,9 +99,23 @@
   </div>
 
   <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="./node_modules/flatpickr/dist/flatpickr.min.js"></script>
   <script src="./node_modules/cleave.js/dist/cleave.min.js"></script>
   <script src="./js/home.js"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBf9iqBWPH0oHdH_OGJMTfhXAo3jCgLJWI&callback=initMap" async
+    defer></script>
+
+  <script>
+    function initMap() {
+      // Create a map object and specify the DOM element for display.
+      var map = new google.maps.Map(document.getElementById('map'), {
+        center: { lat: -34.397, lng: 150.644 },
+        zoom: 8
+      });
+    }</script>
+
 </body>
 
 </html>
