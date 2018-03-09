@@ -6525,4 +6525,29 @@ a.text-dark:hover, a.text-dark:focus {
   .intro__form > input {
     margin-right: 1rem; }
 
+.result-by-budget__detail {
+  display: flex;
+  flex-wrap: wrap; }
+.result-by-budget__departure {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+.result-by-budget__airport {
+  width: 100%;
+  margin-bottom: 0.3rem; }
+.result-by-budget__time {
+  width: 50%;
+  font-weight: bold;
+  color: red;
+  font-size: 0.6rem; }
+.result-by-budget__airline {
+  width: 50%;
+  font-weight: bold;
+  font-size: 0.6rem; }
+
+.result-by-destination {
+  width: 100%;
+  height: 500px; }
+
 /*# sourceMappingURL=main.css.map */
