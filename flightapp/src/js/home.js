@@ -12,7 +12,8 @@ $(document).ready(function() {
       method: "GET",
       url: "result.html",
       success: function(data) {
-        $("#search-results").append(data);
+        $(".js-search-results").after(data);
+        $("html, body").animate({ scrollTop: window.innerHeight }, 500);
       }
     });
   });
