@@ -6529,7 +6529,6 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   flex-wrap: wrap; }
 .result-by-budget__departure {
-  width: 50%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
