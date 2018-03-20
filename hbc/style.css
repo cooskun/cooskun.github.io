@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+.birthday-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #ededed; }
+
+.birthday-container__text {
+  font-family: "Pacifico", cursive;
+  letter-spacing: 0.1rem;
+  color: #d0378c;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  font-size: 12vmin;
+  padding: 2vmin;
+  margin: 0;
+  text-align: center;
+  transform: translate(-50%, 0%);
+  left: 50%;
+  opacity: 0;
+  animation: birthday-container__text 1s 2s forwards; }
+
+@keyframes birthday-container__text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+.birthday-container__graphic {
+  width: 100vmin;
+  height: 100vmin;
+  background: #ededed;
+  position: relative; }
+
+.cake {
+  width: 50%;
+  height: 45%;
+  position: absolute;
+  transform: translate(-50%, 0%);
+  border: 2vmin solid black;
+  bottom: 3vmin;
+  left: 50%;
+  border-radius: 10vmin 10vmin 0 0;
+  background: linear-gradient(to right, #f24fa9 0%, #f24fa9 8%, #f24fa9 9%, #f24fa9 100%); }
+  .cake__bottom {
+    height: 15%;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    border-top: 1.5vmin solid black;
+    background: linear-gradient(to bottom, #ffe714 0%, #ffe714 20%, #ffe714 25%, #ffe714 100%); }
+  .cake__top {
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    background: #965216;
+    border-radius: 10vmin 10vmin 0 0;
+    border-bottom: 2vmin solid black; }
+    .cake__top::before, .cake__top::after {
+      content: " ";
+      width: 6%;
+      height: 0%;
+      position: absolute;
+      background: #965216;
+      border-radius: 0 0 10vmin 10vmin;
+      border: 2vmin solid black;
+      border-top: none;
+      top: 100%;
+      left: 20%;
+      animation: cake__top-left 1.5s 1s forwards; }
+    .cake__top::after {
+      left: 37%;
+      height: 0%;
+      animation: cake__top-right 2s 1s forwards; }
+@keyframes cake__top-left {
+  0% {
+    height: 0%; }
+  100% {
+    height: 140%; } }
+@keyframes cake__top-right {
+  0% {
+    height: 0%; }
+  100% {
+    height: 230%; } }
+  .cake__cherry {
+    position: absolute;
+    width: 17%;
+    height: 17%;
+    background: #d0378c;
+    border-radius: 50%;
+    border: 1.5vmin solid black;
+    top: -18%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    animation: cake__cherry 1s forwards; }
+    .cake__cherry::before {
+      content: " ";
+      width: 80%;
+      height: 60%;
+      position: absolute;
+      border-right: 1.5vmin solid black;
+      border-bottom: 1.5vmin solid black;
+      border-bottom-right-radius: 150%;
+      bottom: 100%;
+      left: 90%;
+      transform: rotate(-20deg); }
+@keyframes cake__cherry {
+  0% {
+    transform: translate(-50%, -5000%); }
+  100% {
+    transform: translate(-50%, 0%); } }
+
+/*# sourceMappingURL=style.css.map */
